@@ -1,0 +1,31 @@
+@import '~font-awesome/css/font-awesome.min.css';
+
+.color1{
+  background-color: rgb(174, 173, 173);
+}
+.custom-width1 {
+  max-width: 350px;
+}
+.color2{
+  background-color: aquamarine;
+}
+.color3{
+  background-color:rgb(217, 248, 254)
+}
+.custom-width2{
+  max-width: 380px;
+}
+.icon-color{
+  color: black;
+  margin-bottom: 60px;
+}
+.custom-button-size{
+  width: 40px; 
+  height: 40px; 
+  font-size: 15px;
+  border-radius: 50px;
+  background-color: white;
+}
+.cw{
+  max-width: 10px;
+}

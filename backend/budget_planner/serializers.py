@@ -1,10 +1,6 @@
 from rest_framework import serializers
-from . models import ExpenseCategory, Expense, Budget, Remaining
+from . models import Expense, Budget
 
-class ExpenseCateroySerializer(serializers.ModelSerializer):
-    class Meta:
-        model = ExpenseCategory
-        fields = '__all__'
     
 class ExpenseSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,7 +11,5 @@ class BudgetSerializer(serializers.ModelSerializer):
     class Meta:
         model = Budget
         fields = '__all__'
-class RemainingSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Remaining
-        fields = '__all__'
+class TotalExpensesSerializer(serializers.Serializer):
+    total_expenses = serializers.DecimalField(decimal_places=2, max_digits=10)
